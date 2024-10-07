@@ -44,10 +44,15 @@ public class Main {
             String pick = scanner.nextLine();
 
             //put input back into the story
-            outputStory = outputStory.replace(identifier, pick);
+            outputStory = replace(outputStory,identifier, pick);
         }
 
         //output story
         System.out.println(outputStory);
+    }
+
+    private static String replace(String input, String stringToReplace, String str){
+        int index = input.indexOf(stringToReplace);
+        return input.substring(0,index)+str+input.substring(index+stringToReplace.length());
     }
 }
