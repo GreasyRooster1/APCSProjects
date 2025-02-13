@@ -31,8 +31,24 @@ public class Renderer {
         System.out.println(out);
     }
 
-    public void renderMan(ArrayList<ArrayList<Character>> screen){
+    public void renderMan(ArrayList<ArrayList<Character>> screen,GameState state){
+        if(state.getGuesses().size()<1){return;}
         screen.get(2).set(4,'0');
+
+        if(state.getGuesses().size()<2){return;}
+        screen.get(3).set(4,'|');
+
+        if(state.getGuesses().size()<3){return;}
+        screen.get(4).set(3,'/');
+
+        if(state.getGuesses().size()<4){return;}
+        screen.get(4).set(5,'\\');
+
+        if(state.getGuesses().size()<5){return;}
+        screen.get(2).set(3,'\\');
+
+        if(state.getGuesses().size()<6){return;}
+        screen.get(2).set(5,'/');
     }
 
     public void renderBorder(ArrayList<ArrayList<Character>> screen){
