@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/APCSProjects.iml" filepath="$PROJECT_DIR$/APCSProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChooseYourOwnAdventure/ChooseYourOwnAdventure.iml" filepath="$PROJECT_DIR$/ChooseYourOwnAdventure/ChooseYourOwnAdventure.iml" />
       <module fileurl="file://$PROJECT_DIR$/GuessChecker/GuessChecker.iml" filepath="$PROJECT_DIR$/GuessChecker/GuessChecker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hangman/Hangman.iml" filepath="$PROJECT_DIR$/Hangman/Hangman.iml" />
       <module fileurl="file://$PROJECT_DIR$/MadLibs/MadLibs.iml" filepath="$PROJECT_DIR$/MadLibs/MadLibs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem1_2_6/Problem1_2_6.iml" filepath="$PROJECT_DIR$/Problem1_2_6/Problem1_2_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem1_2_8/Problem1_2_8.iml" filepath="$PROJECT_DIR$/Problem1_2_8/Problem1_2_8.iml" />
