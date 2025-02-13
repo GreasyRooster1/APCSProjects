@@ -14,7 +14,7 @@ public class Renderer {
             screen.add(tmp);
         }
 
-        renderMan(screen);
+        renderMan(screen,state);
         renderBorder(screen);
 
         print(screen);
@@ -32,7 +32,7 @@ public class Renderer {
     }
 
     public void renderMan(ArrayList<ArrayList<Character>> screen,GameState state){
-        if(state.getGuesses().size()<1){return;}
+        if(state.getGuesses().isEmpty()){return;}
         screen.get(2).set(4,'0');
 
         if(state.getGuesses().size()<2){return;}
