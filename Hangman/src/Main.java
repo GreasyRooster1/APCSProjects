@@ -1,5 +1,7 @@
 public class Main {
+    private static GameState gameState = new GameState();
+    private static Renderer renderer = new Renderer();
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        renderer.render(gameState);
     }
 }
