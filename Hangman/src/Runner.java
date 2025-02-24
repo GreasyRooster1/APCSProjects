@@ -6,9 +6,20 @@ public class Runner {
         char guess = getInput();
         state.getGuesses().add(guess);
         if(state.getCorrectWord().contains(guess+"")){
-
+            checkPhrase(state,guess);
         }
     }
+
+    public void checkPhrase(GameState state,char guess){
+        String puzzle = state.getCurrentPuzzle();
+        for(int i=0;i<state.getCorrectWord().length();i++){
+            if(state.getCorrectWord().charAt(i) == guess){
+                puzzle= puzzle.substring(0,i)+state.getCorrectWord().charAt(i)+puzzle.substring(i);
+            }
+        }
+        state.setCurrentPuzzle(puzzle);
+    }
+
     public char getInput(){
         while(true) {
             Scanner scanner = new Scanner(System.in);

@@ -15,6 +15,7 @@ public class Renderer {
         }
 
         renderMan(screen,state);
+        renderPuzzle(screen,state);
         renderBorder(screen);
 
         print(screen);
@@ -29,6 +30,12 @@ public class Renderer {
             out.append("\n");
         }
         System.out.println(out);
+    }
+
+    public void renderPuzzle(ArrayList<ArrayList<Character>> screen,GameState state){
+        for(int i = 0; i < state.getCurrentPuzzle().length(); i++) {
+            screen.get(8).set(i+4, state.getCurrentPuzzle().charAt(i));
+        }
     }
 
     public void renderMan(ArrayList<ArrayList<Character>> screen,GameState state){

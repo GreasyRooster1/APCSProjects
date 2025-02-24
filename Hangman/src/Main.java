@@ -3,7 +3,7 @@ public class Main {
     private static Renderer renderer = new Renderer();
     private static Runner runner = new Runner();
     public static void main(String[] args) {
-        gameState.setup()
+        gameState.setup();
         while (gameState.isRunning()) {
             step(gameState);
         }
