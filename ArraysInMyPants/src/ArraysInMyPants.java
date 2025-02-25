@@ -1,6 +1,8 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class ArraysInMyPants {
+    //3.7.5
     public static int find(int[] array, int value) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value) return i;
@@ -81,5 +83,57 @@ public class ArraysInMyPants {
             }
         }
         return asc ? 1 : desc ? -1 : 0;
+    }
+
+    //3.7.4
+
+    public static int max1(int[] array) {
+        int max = Integer.MIN_VALUE;
+        for (int num : array) {
+            if (num > max) max = num;
+        }
+        return max;
+    }
+    public static int min1(int[] array) {
+        int min = Integer.MAX_VALUE;
+        for (int num : array) {
+            if (num < min) min= num;
+        }
+        return min;
+    }
+
+    public static int sum1(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        return sum;
+    }
+
+    public static int mean1(int[] array) {
+        return sum(array)/array.length;
+    }
+
+    public static int mode1(int[] array){
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for(int num:array){
+            map.put(num,map.getOrDefault(num,0)+1);
+        }
+        return Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
+    }
+
+    public static int[] reverse1(int[] array) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i= array.length-1;i>-1;i--) {
+            list.add(array[i]);
+        }
+        int[] array1 = (int[]) list.toArray();
+        return array1;
+    }
+    //yes im mutating the array
+    public static void shift1(int[] array,int position) {
+        for (int i = position-1; i >= 0; i--) {
+            array[i+1] = array[i];
+        }
     }
 }
