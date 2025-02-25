@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APCSProjects.iml" filepath="$PROJECT_DIR$/APCSProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArraysInMyPants/ArraysInMyPants.iml" filepath="$PROJECT_DIR$/ArraysInMyPants/ArraysInMyPants.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChooseYourOwnAdventure/ChooseYourOwnAdventure.iml" filepath="$PROJECT_DIR$/ChooseYourOwnAdventure/ChooseYourOwnAdventure.iml" />
       <module fileurl="file://$PROJECT_DIR$/GuessChecker/GuessChecker.iml" filepath="$PROJECT_DIR$/GuessChecker/GuessChecker.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hangman/Hangman.iml" filepath="$PROJECT_DIR$/Hangman/Hangman.iml" />
