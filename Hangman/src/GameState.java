@@ -7,6 +7,9 @@ public class GameState {
     private boolean running = true;
     private String[] words = {"teo","lucas","french","code","jazz","chatgpt","github","java","stick","bundle"};
     private String currentPuzzle = "";
+    private int incorrectGuesses = 0;
+    private boolean won = false;
+    private boolean loss = false;
     public void setup() {
         correctWord = words[(int)(Math.random()* words.length)];
         for (int i = 0; i < correctWord.length(); i++) {
@@ -43,5 +46,29 @@ public class GameState {
     }
     public void setRunning(boolean running) {
         this.running = running;
+    }
+
+    public int getIncorrectGuesses() {
+        return incorrectGuesses;
+    }
+
+    public void setIncorrectGuesses(int incorrectGuesses) {
+        this.incorrectGuesses = incorrectGuesses;
+    }
+
+    public boolean isWon() {
+        return won;
+    }
+
+    public void setWon(boolean won) {
+        this.won = won;
+    }
+
+    public boolean isLoss() {
+        return loss;
+    }
+
+    public void setLoss(boolean loss) {
+        this.loss = loss;
     }
 }

@@ -7,6 +7,11 @@ public class Runner {
         state.getGuesses().add(guess);
         if(state.getCorrectWord().contains(guess+"")){
             checkPhrase(state,guess);
+        }else{
+            state.setIncorrectGuesses(state.getIncorrectGuesses()+1);
+            if(state.getIncorrectGuesses()==6){
+                state.setLoss(true);
+            }
         }
     }
 
@@ -14,8 +19,11 @@ public class Runner {
         String puzzle = state.getCurrentPuzzle();
         for(int i=0;i<state.getCorrectWord().length();i++){
             if(state.getCorrectWord().charAt(i) == guess){
-                puzzle= puzzle.substring(0,i)+state.getCorrectWord().charAt(i)+puzzle.substring(i);
+                puzzle= puzzle.substring(0,i)+state.getCorrectWord().charAt(i)+puzzle.substring(i+1);
             }
+        }
+        if(puzzle.equals(state.getCorrectWord())){
+            state.setWon(true);
         }
         state.setCurrentPuzzle(puzzle);
     }
