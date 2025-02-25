@@ -5,7 +5,7 @@ public class GameState {
     private ArrayList<Character> guesses = new ArrayList<>();
     private String correctWord = "";
     private boolean running = true;
-    private String[] words = {"teo","lucas","french","code","jazz","chatgpt","github","java","stick","bundle"};
+    private String[] words = {"teo","lucas","french","code","jazz","chatgpt","github","java","stick","bundle","mrnicholassullivanfriedman","sullivan","holyc","templeos","zzzzz","teosmells","hawktuahcoin"};
     private String currentPuzzle = "";
     private int incorrectGuesses = 0;
     private boolean won = false;
@@ -15,8 +15,8 @@ public class GameState {
         for (int i = 0; i < correctWord.length(); i++) {
             currentPuzzle = currentPuzzle+"_";
         }
-        System.out.println(correctWord);
-        System.out.println(currentPuzzle);
+//        System.out.println(correctWord);
+//        System.out.println(currentPuzzle);
     }
 
     public ArrayList<Character> getGuesses() {
