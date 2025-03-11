@@ -58,7 +58,7 @@ public class TicTacToe {
 
         sum=0;
         for (int i = 0; i <= 2; i++) {
-            for (int j = 0; j <= 2; j++) {
+            for (int j = 2; j >= 0; j--) {
                 if(i==j){
                     sum+=board[j][i];
                 }

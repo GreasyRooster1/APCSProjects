@@ -122,14 +122,14 @@ public class ArraysInMyPants {
         return Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
     }
 
-    public static int[] reverse1(int[] array) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i= array.length-1;i>-1;i--) {
-            list.add(array[i]);
-        }
-        int[] array1 = (int[]) list.toArray();
-        return array1;
-    }
+//    public static int[] reverse1(int[] array) {
+//        ArrayList<Integer> list = new ArrayList<Integer>();
+//        for (int i= array.length-1;i>-1;i--) {
+//            list.add(array[i]);
+//        }
+//        int[] array1 = (int[]) list.toArray();
+//        return array1;
+//    }
     //yes im mutating the array
     public static void shift1(int[] array,int position) {
         for (int i = position-1; i >= 0; i--) {
