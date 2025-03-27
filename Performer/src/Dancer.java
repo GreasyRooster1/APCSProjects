@@ -2,12 +2,12 @@ class Dancer extends Performer {
     private double shoeSize;
 
     public Dancer(double shoeSize) {
-        super();
+        super("robby heilghsborough",24);
         this.shoeSize = shoeSize;
     }
 
     public Dancer(){
-        super();
+        super("robby heilghsborough",24);
         this.shoeSize = 10.0;
     }
 

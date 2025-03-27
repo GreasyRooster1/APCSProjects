@@ -2,11 +2,11 @@ class Musician extends Performer {
     private String instrument;
 
     public Musician(String _instrument) {
-        super();
+        super("wolfgang mozart",167);
         instrument=_instrument;
     }
     public Musician() {
-        super();
+        super("wolfgang mozart",167);
         instrument="triangle";
     }
 

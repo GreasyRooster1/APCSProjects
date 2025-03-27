@@ -3,7 +3,7 @@ class BalletDancer extends Dancer {
 
     // ?????
     BalletDancer(Object balletShoes){
-        super();
+        super(16);
         this.balletShoes = balletShoes;
     }
 
